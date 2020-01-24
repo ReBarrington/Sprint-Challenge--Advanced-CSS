@@ -10,13 +10,14 @@
 }
 
 .btn(@color, @txtcolor) {
+    text-align: center;
+    white-space: nowrap;
     background: @color;
     color: @txtcolor;
-    padding: 3%;
     .flex();
     width: 30%;
-    border: @color 2px solid;
-    border-radius: 5%;
+    border: @color 1px solid;
+    border-radius: 15px;
 
     &:hover{
         background: @txtcolor;

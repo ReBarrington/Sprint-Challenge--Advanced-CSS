@@ -61,6 +61,8 @@
 
     @media @phone {
       flex-direction: column-reverse;
+      padding: 15px;
+      align-items: center;
     }
 
     .walk-text {
@@ -72,14 +74,34 @@
 
       h3 {
         margin-bottom: 10px;
+
+        @media @phone {
+          margin-top: 30px;
+        }
       }
 
       p {
         margin-bottom: 26px;
+
+        @media @phone {
+          margin-bottom: 0;
+        }
       }
 
-      .btn {
-        .btn(navy, white)
+      .buttn {
+        .btn(navy, white);
+        display: flex;
+        align-items: center;
+        
+        @media @phone {
+          margin: 5% auto;
+          .flex();
+        }
+
+        p {
+          font-size: 1.5rem;
+          margin: 0 auto;
+        }
       }
     }
 
@@ -89,6 +111,7 @@
 
       @media @phone {
         width: 100%;
+        margin: 0;
       }
       
       img {
