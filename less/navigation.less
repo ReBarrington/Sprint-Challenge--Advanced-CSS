@@ -1,1 +1,25 @@
 // Navigation code here
+.navCont {
+    .flex();
+    flex-wrap: wrap;    
+
+
+    h1 {
+        width: 100%;
+        .flex();
+        font-size: 5rem;
+        padding: 2%;
+    }
+
+    nav {
+        width: 60%;
+        .flex(@justify:space-around;);
+
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 2rem;
+            padding: 2%;
+        }
+    }
+}
