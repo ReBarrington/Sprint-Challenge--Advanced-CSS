@@ -4,3 +4,22 @@
     justify-content: @justify;
     align-content: @align;
 }
+
+.navColor(){
+    background: #f4f4f4;
+}
+
+.btn(@color, @txtcolor) {
+    background: @color;
+    color: @txtcolor;
+    padding: 3%;
+    .flex();
+    width: 30%;
+    border: @color 2px solid;
+    border-radius: 5%;
+
+    &:hover{
+        background: @txtcolor;
+        color: @color;
+    }
+}

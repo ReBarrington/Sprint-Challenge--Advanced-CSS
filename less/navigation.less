@@ -5,7 +5,7 @@
 
 
     h1 {
-        background: #f4f4f4;
+        .navColor();
         width: 100%;
         .flex();
         font-size: 5rem;
@@ -13,19 +13,17 @@
     }
 
     nav {
-        background: #f4f4f4;
+        .navColor();
         width: 100%;
         padding: 0 10%;
         .flex(@justify:space-around;);
 
         a {
+            white-space: nowrap;
             text-decoration: none;
             color: @nav-font;
             font-size: 2rem;
             padding: 2%;
         }
-    }
-
-    img {
     }
 }

@@ -184,6 +184,7 @@ p {
   align-content: center;
 }
 .navCont nav a {
+  white-space: nowrap;
   text-decoration: none;
   color: #454A59;
   font-size: 2rem;
@@ -240,6 +241,21 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: navy;
+  color: white;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 30%;
+  border: navy 2px solid;
+  border-radius: 5%;
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: navy;
 }
 .home .walk .walk-img {
   width: 46%;
