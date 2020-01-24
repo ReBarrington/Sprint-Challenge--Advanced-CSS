@@ -62,6 +62,7 @@
     @media @phone {
       flex-direction: column-reverse;
       padding: 15px;
+      margin-top: 0;
       align-items: center;
     }
 
@@ -88,14 +89,16 @@
         }
       }
 
-      .buttn {
-        .btn(navy, white);
+      div.buttn {
+        .btn(@btn-bg-color, white);
         display: flex;
         align-items: center;
+        justify-content: center;
+        margin-top: 5%;
         
         @media @phone {
-          margin: 5% auto;
           .flex();
+          width: 100%;
         }
 
         p {
