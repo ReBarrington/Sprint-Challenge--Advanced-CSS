@@ -1,1 +1,59 @@
 // Navigation code here
+.navCont {
+    .flex();
+    flex-wrap: wrap;    
+
+
+    h1 {
+        .navColor();
+        width: 100%;
+        .flex();
+        font-size: 5rem;
+        padding: 2%;
+
+        @media @phone {
+            font-size: 3rem;
+        }
+    }
+
+    nav {
+        .navColor();
+        width: 100%;
+        padding: 0 10%;
+        .flex(@justify:space-around;);
+
+        a {
+            white-space: nowrap;
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 2rem;
+            padding: 2%;
+
+            @media @phone {
+                font-size: 1rem;
+            }
+        }
+
+        #home {
+            .bounce(@delay:0s);
+        }
+        #about {
+            .bounce(@delay:1s);
+        }
+        #blog {
+            .bounce(@delay:2s);
+        }
+        #contact {
+            .bounce(@delay:3s);
+        }
+        #signin {
+            .bounce(@delay:4s);
+        }
+    }
+    
+    img {
+        @media @phone {
+            width: 100%;
+        }
+    }
+}

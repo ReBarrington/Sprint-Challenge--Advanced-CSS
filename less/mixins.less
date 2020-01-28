@@ -1,1 +1,32 @@
 // Mixins Here
+.flex(@justify: center, @align: center,) {
+    display: flex;
+    justify-content: @justify;
+    align-content: @align;
+}
+
+.navColor(){
+    background: #f4f4f4;
+}
+
+.btn(@color, @txtcolor) {
+    text-align: center;
+    white-space: nowrap;
+    background: @color;
+    color: @txtcolor;
+    .flex();
+    width: 30%;
+    border: @color 1px solid;
+    border-radius: 5px;
+
+    &:hover{
+        background: @txtcolor;
+        color: @color;
+    }
+}
+
+.bounce(@duration: 2s, @delay: 1s) {
+    animation-duration: @duration;
+    animation-delay: @delay;
+    animation-name: bounceIn;
+}
